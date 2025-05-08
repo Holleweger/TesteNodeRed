@@ -116,9 +116,31 @@
         "x": 380,
         "y": 260,
         "wires": [
-            [],
-            [],
-            []
+            [
+                "5371691d33f12ff5"
+            ],
+            [
+                "5371691d33f12ff5"
+            ],
+            [
+                "5371691d33f12ff5"
+            ]
         ]
+    },
+    {
+        "id": "5371691d33f12ff5",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 280,
+        "wires": []
     }
 ]
