@@ -54,30 +54,8 @@
         "y": 260,
         "wires": [
             [
-                "5594eeb88baa74ed"
+                "9f966f4e90e85908"
             ]
-        ]
-    },
-    {
-        "id": "5594eeb88baa74ed",
-        "type": "http request",
-        "z": "f6f2187d.f17ca8",
-        "name": "Salvar Atualização",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://localhost:1880/flows",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 330,
-        "y": 260,
-        "wires": [
-            []
         ]
     },
     {
@@ -85,37 +63,19 @@
         "type": "inject",
         "z": "f6f2187d.f17ca8",
         "name": "Lançar Atualização",
-        "props": [],
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "",
+        "payloadType": "str",
         "x": 130,
-        "y": 180,
-        "wires": [
-            [
-                "4438bd6f2922fe94"
-            ]
-        ]
-    },
-    {
-        "id": "4438bd6f2922fe94",
-        "type": "http request",
-        "z": "f6f2187d.f17ca8",
-        "name": "Obter Fluxos",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://localhost:1880/flows",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 310,
         "y": 180,
         "wires": [
             [
@@ -137,8 +97,28 @@
         "correl": "",
         "expiry": "",
         "broker": "0713c3a1ec8d676d",
-        "x": 460,
+        "x": 340,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "9f966f4e90e85908",
+        "type": "exec",
+        "z": "f6f2187d.f17ca8",
+        "command": "",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
     }
 ]
