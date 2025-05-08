@@ -105,7 +105,7 @@
         "id": "9f966f4e90e85908",
         "type": "exec",
         "z": "f6f2187d.f17ca8",
-        "command": "",
+        "command": "cd /data git pull origin main",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -113,7 +113,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 320,
+        "x": 380,
         "y": 260,
         "wires": [
             [],
